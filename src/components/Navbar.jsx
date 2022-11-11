@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { ContentWrapper, UnStyledButton } from '../style/SharedStyle';
-import BrandLogo from '../assets/Icon/brandLogo.png';
+// import BrandLogo from '../assets/Icon/brandLogo.png';
 import { Link } from 'react-router-dom';
 import { COLORS, QUERIES, WEIGHTS } from '../style/Constraints';
 import { navMenu } from '../data/navData';
+import brandLogo from '../assets/brandLogo.png';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <ContentWrapper>
       <Wrapper>
-        <BrandIcon src={BrandLogo} alt='aggPass logo' />
+        <BrandIcon src={brandLogo} alt='aggPass logo' />
         <MobileActionButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <MenuStick isMenuOpen={isMenuOpen}></MenuStick>
           <MenuStick isMenuOpen={isMenuOpen}></MenuStick>

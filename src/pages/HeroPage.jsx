@@ -2,31 +2,37 @@ import React from 'react';
 import styled from 'styled-components';
 import CoreService from '../components/CoreService';
 import Navbar from '../components/Navbar';
+import Trusted from '../components/Trusted';
 import { COLORS, QUERIES, WEIGHTS } from '../style/Constraints';
 import { ContentWrapper, UnStyledButton } from '../style/SharedStyle';
+import CategoryPage from './CategoryPage';
 
 const HeroPage = () => {
   return (
-    <HeroPageWrapper>
-      <Navbar />
-      <Wrapper>
-        <Header>
-          Need Help Looking for the Best
-          <HighlighText>
-            <br /> App Development
-          </HighlighText>
-          <span> </span>Partner for Your Project?
-        </Header>
-        <SubHeader>
-          We'll recommend you the best pre-vetted digital agencies <br /> based on your needs
-        </SubHeader>
-        <ButtonGroup>
-          <ButtonGhost>Find Out How</ButtonGhost>
-          <Button>Get Started</Button>
-        </ButtonGroup>
-        <CoreService />
-      </Wrapper>
-    </HeroPageWrapper>
+    <>
+      <HeroPageWrapper>
+        <Navbar />
+        <Wrapper>
+          <Header>
+            Need Help Looking for the Best
+            <HighlighText>
+              <br /> App Development
+            </HighlighText>
+            <span> </span>Partner for Your Project?
+          </Header>
+          <SubHeader>
+            We'll recommend you the best pre-vetted digital agencies <br /> based on your needs
+          </SubHeader>
+          <ButtonGroup>
+            <ButtonGhost>Find Out How</ButtonGhost>
+            <Button>Get Started</Button>
+          </ButtonGroup>
+          <CoreService />
+        </Wrapper>
+        <Trusted />
+      </HeroPageWrapper>
+      <CategoryPage />
+    </>
   );
 };
 

@@ -46,7 +46,7 @@ const Card = styled.div`
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
   }
   @media ${QUERIES.tabletAndSmaller} {
-    min-width: 220px;
+    min-width: 200px;
   }
   @media ${QUERIES.phoneAndSmaller} {
     min-width: 100%;
